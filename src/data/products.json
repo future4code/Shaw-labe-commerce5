@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "nome": "Island Oasis - Cappucino Mix",
+    "valor": 92.04,
+    "imagem": "https://picsum.photos/200/200"
+  },
+  {
+    "id": 2,
+    "nome": "Cactus Pads",
+    "valor": 428.93,
+    "imagem": "https://picsum.photos/200/200"
+  },
+  {
+    "id": 3,
+    "nome": "Milk - 2% 250 Ml",
+    "valor": 552.63,
+    "imagem": "https://picsum.photos/200/200"
+  },
+  {
+    "id": 4,
+    "nome": "Chocolate - Feathers",
+    "valor": 117.17,
+    "imagem": "https://picsum.photos/200/200"
+  },
+  {
+    "id": 5,
+    "nome": "Wine - Acient Coast Caberne",
+    "valor": 155.77,
+    "imagem": "https://picsum.photos/200/200"
+  },
+  {
+    "id": 6,
+    "nome": "Oil - Sesame",
+    "valor": 269.98,
+    "imagem": "https://picsum.photos/200/200"
+  },
+  {
+    "id": 7,
+    "nome": "Kiwi Gold Zespri",
+    "valor": 595.5,
+    "imagem": "https://picsum.photos/200/200"
+  },
+  {
+    "id": 8,
+    "nome": "The Pop Shoppe - Black Cherry",
+    "valor": 427.79,
+    "imagem": "https://picsum.photos/200/200"
+  },
+  {
+    "id": 9,
+    "nome": "Sproutsmustard Cress",
+    "valor": 891.9,
+    "imagem": "https://picsum.photos/200/200"
+  },
+  {
+    "id": 10,
+    "nome": "Wine - Blue Nun Qualitatswein",
+    "valor": 193.01,
+    "imagem": "https://picsum.photos/200/200"
+  },
+  {
+    "id": 11,
+    "nome": "Crab - Meat Combo",
+    "valor": 743.25,
+    "imagem": "https://picsum.photos/200/200"
+  },
+  {
+    "id": 12,
+    "nome": "Chickhen - Chicken Phyllo",
+    "valor": 179.59,
+    "imagem": "https://picsum.photos/200/200"
+  },
+  {
+    "id": 13,
+    "nome": "Salt - Table",
+    "valor": 653.39,
+    "imagem": "https://picsum.photos/200/200"
+  },
+  {
+    "id": 14,
+    "nome": "Dish Towel",
+    "valor": 843.37,
+    "imagem": "https://picsum.photos/200/200"
+  },
+  {
+    "id": 15,
+    "nome": "Milkettes - 2%",
+    "valor": 795.96,
+    "imagem": "https://picsum.photos/200/200"
+  }
+]

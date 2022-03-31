@@ -1,6 +1,11 @@
+
 import React from 'react';
 import styled from 'styled-components';
 import {Filtro} from './Components/Filtro'
+
+import './App.css';
+import Home from './Components/Home'
+import productList from "./data/products.json"
 
 
 const DivContainer = styled.div`
@@ -13,12 +18,22 @@ const DivContainer = styled.div`
 `;
 
 
-function App() {
-  return (
-    <DivContainer>
-      {<Filtro/>}      
-    </DivContainer>
-  );
-}
+class App extends React.Component {
+  state = {
+    produtos: productList
 
+  };
+
+  render() {
+    return (
+      <DivContainer>
+      <Filtro/>
+      <Home produtos = {this.state.produtos} >
+      
+      </Home>
+      </DivContainer>
+
+    )
+  }
+}
 export default App;
