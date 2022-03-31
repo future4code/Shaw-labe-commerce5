@@ -3,26 +3,38 @@ import foto from '../img/botas.webp'
 
 
 class Home extends React.Component {
-
-   // renderizaProdutos = () => {
-       // this.props.produtos
+ state={
+     ordenacao:"",
+ }
+ upDateOrdenacao = (event)=>{
+ this.setState({ordenacao: event.target.value})
+ };
     
 
     render() {
         return (
             <div>
                 <div>
-                    <p>Quantidade de produtos:</p>
-                    
+                    <p>Quantidade de produtos: {this.props.produtos.length}</p>
+                  
                     <label>Ordem</label>
-                   <select>
-                   <option value ="Maior valor">Maior </option>
-                   <option value ="Menor valor"> Menor</option>
-                   </select>
+                    <select value = {this.state.ordenacao} 
+                        onChange={this.upDateOrdenacao}>
+                        <option value="crescente"> Menor valor</option>
+                        <option value="decrescente">Maior valor </option>
+                    </select>
+                    {this.state.ordenacao}
                 </div>
                 <div>
                     <ul className="lista-produtos">
-                        {this.props.produtos.map((produto) => {
+                        {this.props.produtos
+                        .sort((a,b)=>{
+                          if(this.state.ordenacao === "crescente" || this.state.ordenacao === ""){
+                             return a.valor - b.valor
+                          }else{
+                              return b.valor - a.valor                          }  
+                        })
+                        .map((produto) => {
                             return (
                                 <li>
 
