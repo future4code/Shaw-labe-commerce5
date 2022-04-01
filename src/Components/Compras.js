@@ -3,9 +3,8 @@ import { ShoppingCartItem } from './ProdutosEscolhidos'
 import styled from 'styled-components';
 
 const ShoppingCartContainer = styled.div`
-  border: 8px solid black;
   padding: 8px;
-  background-color: #d3d3d3;
+  background-color:#CEE3F6;
   border-radius: 8px;
   
 `;
@@ -14,6 +13,16 @@ const CartListContainer = styled.div`
   display: grid;
   gap: 8px;
 `
+
+const Logo = styled.img`
+  width: 8rem;
+  height: 8.5rem;
+  border-radius: 2rem;
+  display: grid;
+  justify-items: end;
+  padding-top:35rem ;
+  padding-left: 1.8rem;
+`;
 
 export class ShoppingCart extends React.Component {
   getTotalValue = () => {
@@ -38,6 +47,7 @@ export class ShoppingCart extends React.Component {
         })}
       </CartListContainer>
       <p>Valor total: R${this.getTotalValue()},00</p>
+      <Logo src="https://cdn-icons.flaticon.com/png/128/3212/premium/3212666.png?token=exp=1648846275~hmac=8a7d30e74d56cdceacd70ffa1f2871bc"/>
     </ShoppingCartContainer>
   }
 }

@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components';
 
 const FiltroContainer = styled.div`
-  border: 7px solid black;
   padding: 8px;
   border-radius: 10px;
-  background-color: #d3d3d3;
+  background-color: #CEE3F6;
+  
 `;
 
 const InputContainer = styled.label`
