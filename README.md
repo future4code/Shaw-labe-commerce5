@@ -1,8 +1,12 @@
+Nome Projeto:
+-C.E.U Viajens Espaciais!
 
-Trabalho realizado Por:
-Sabrina Caroline Pires da Silva
-Pablo Andrade
-Regiscleia Dias Amorim Silva
+O que funciona?
+-A logica e a Responsividade também.
 
+O que não funciona?
+-Tentamos alterar o cursor, e tbm fazer uma animação, porem não conseguimos.
 
+Link do Surge:
 https://hurried-air.surge.sh/
+
