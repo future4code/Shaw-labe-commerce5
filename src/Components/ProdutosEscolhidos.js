@@ -19,8 +19,8 @@ const Botao = styled.button`
   cursor: pointer;
   font-family: Verdana;
   font-weight: bold;
-  font-size: 13px;
-  padding: 6px 10px;
+  font-size: 5px;
+  padding-left: 8px;
   text-decoration: none;
 `;
 

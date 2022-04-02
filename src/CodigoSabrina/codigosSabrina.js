@@ -77,7 +77,7 @@
 
 //       {/* <Filtro /> */}
 
-
+//
 //       <div >
 //         {this.state.produtos
 //         .filter(produto =>{
@@ -103,7 +103,7 @@
 
 // ================== COMPONENTES ======================
 
-//import React from "react";
+// import React from "react";
 // import styled from "styled-components";
 // import produto from "./data/products.json"
 
@@ -128,19 +128,22 @@
 //     const produtosCarrinho = this.state.produtos.find(
 //       (produtos) => produtoId === produtos.id
 //     );
+
 //     if (produtosCarrinho) {
 //       const novoProduto = this.state.produtos.map((produtos) => {
 //         if (produtoId === produtos.id) {
 //           return {
-//             quantidade: produtos.quantidade + 1,
-//             ...produtos,
-//           };
-//         }
-//         return produtos;
-//       });
+
+//          quantidade: produtos.quantidade + 1,
+//          ...produtos,
+//        };
+//        }else{
+//      
+//      return produtos;
+//        
+//       }});
 //       this.setState({ produtosCarrinho: novoProduto });
-//     } else {
-//     }
+//     } 
 //   };
 
 //   onClickRemoveProduto = (produtoId) => {
@@ -161,3 +164,10 @@
 //     );
 //   }
 // }
+
+//Escolhemos deixar nossos codigos nesses arquivos, que mesmo eles não sendo utilizados nos esforçamos bastante para faze-los.
+//O meu particularmente não esta funcional, pois sou lenta, então vou fazendo aos poucos. Iniciei o filtro tbm pelo motivo de ter
+//travado no carrinho e queria fazer alguma outra coisa. 
+//A parte da estilização foi bem silmples, mas foi divertido fazer, passamos muito tempo tentando pesquisar como fazer animações e 
+//mudar o cursor, mas não conseguimos, porem aprendemos umas coisas novas. Porem estou com MUUUITA dificuldade nesse conteúdo, até 
+//semana passada senti que estava entendendo tudo, mas ai de um dia para o outro parece que esqueci tudo, de verdade, não sei o que aconteceu.
