@@ -3,32 +3,26 @@ import { ShoppingCartItem } from './ProdutosEscolhidos'
 import styled from 'styled-components';
 
 const ShoppingCartContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
   padding: 8px;
   background-color:#CEE3F6;
   border-radius: 8px;
-  
 `;
 
-const CartListContainer = styled.div`
-  display: grid;
-  gap: 8px;
-`
-
 const Logo = styled.img`
-  width: 8rem;
-  height: 8.5rem;
-  border-radius: 2rem;
-  display: grid;
-  justify-items: end;
-  padding-top:35rem ;
-  padding-left: 1.8rem;
+  width: 50px;
+  heigth: 50px;
+  margin-top: auto;
+  align-self: center;
 `;
 
 export class ShoppingCart extends React.Component {
   getTotalValue = () => {
     let totalValue = 0
 
-    for(let product of this.props.productsInCart) {
+    for (let product of this.props.productsInCart) {
       totalValue += product.price * product.quantity
     }
 
@@ -36,18 +30,20 @@ export class ShoppingCart extends React.Component {
   }
 
   render() {
-    return <ShoppingCartContainer>
-      <h3>Carrinho:</h3>
-      <CartListContainer>
-        {this.props.productsInCart.map((product) => {
-          return <ShoppingCartItem 
-                    cartItem={product} 
-                    onRemoveProductFromCart={this.props.onRemoveProductFromCart}
-                  />
-        })}
-      </CartListContainer>
-      <p>Valor total: R${this.getTotalValue()},00</p>
-      <Logo src="https://cdn-icons.flaticon.com/png/128/3212/premium/3212666.png?token=exp=1648846275~hmac=8a7d30e74d56cdceacd70ffa1f2871bc"/>
-    </ShoppingCartContainer>
+    return (
+      <ShoppingCartContainer>
+        <div>
+          <h3>Carrinho:</h3>
+          {this.props.productsInCart.map((product) => {
+            return <ShoppingCartItem
+              cartItem={product}
+              onRemoveProductFromCart={this.props.onRemoveProductFromCart}
+            />
+          })}
+          <p>Valor total: R${this.getTotalValue()},00</p>
+        </div>
+        <Logo src={require('../images/estrela.png')} alt="" />
+      </ShoppingCartContainer>
+    )
   }
 }

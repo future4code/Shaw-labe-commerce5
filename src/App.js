@@ -5,50 +5,65 @@ import { ShoppingCart } from './Components/Compras';
 import styled from 'styled-components';
 
 const AppContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  display: flex;
+  flex-direction: column;
   padding: 16px;
-  gap: 8px;
   font-family:Andale Mono, monospace;
   background-color: #DA81F5;
+
+  @media(min-width: 600px) {
+    display: grid;
+    grid-template-columns: 20% 1fr 30%;
+  }
 `;
+// const Mouse = {
+// cursor: pointer;
+// cursor: auto;
 
+// /* Usando URL e cordenadas */
+// cursor:  url() 4 12, auto;
+// cursor:  url(cursor2.png) 2 2, pointer;
 
+// /* Valores globais */
+// cursor: inherit;
+// cursor: initial;
+// cursor: unset;
+// }
 
 const products = [
   {
     id: 1,
-    name: 'Carrinho de bebê',
+    name: 'Viagem ao buraco negro',
     price: 500,
     photo: "http://s2.glbimg.com/avqmPOmDpB6YPJi68t_NlABwRd0=/290x217/s.glbimg.com/jo/g1/f/original/2011/07/22/quasar-vapor.jpg"
   },
   {
     id: 2,
-    name: 'Bola de futebol Nike',
+    name: 'city tour com vista do satelite + guia turisco',
     price: 150,
     photo: "https://p2.trrsf.com/image/fget/cf/1200/628/middle/images.terra.com/2014/10/02/terraestacaoespacialinternacionalbbc.jpg"
   },
   {
     id: 3,
-    name: 'Teclado mecânico Razer',
+    name: 'viagem para o buraco de minhoca',
     price: 780,
     photo: 'https://s2.glbimg.com/v8FlI11BODb7dvqFzha-Uw2JOTQ=/e.glbimg.com/og/ed/f/original/2018/12/17/wormhole-2514312_1920.jpg'
   },
   {
     id: 4,
-    name: 'Bola de Basquete',
+    name: 'Viagem para Lua',
     price: 250,
     photo: 'https://mistobrasilia.com/wp-content/uploads/2021/03/Lua-terra.jpg'
   },
   {
     id: 5,
-    name: 'Televisão Samsung',
+    name: 'experiencia de astronauta',
     price: 2500,
     photo: 'https://www.milkpoint.com.br/img/artigo/conteudo/36821/'
   },
   {
     id: 6,
-    name: 'Mouse Razer',
+    name: 'Passeio de onibus espacial',
     price: 400,
     photo: 'http://g1.globo.com/Noticias/Ciencia/foto/0,,14316948,00.jpg'
 

@@ -8,9 +8,10 @@ const CardContainer = styled.div`
   border: 1px solid #cee3f6;
   box-shadow: grey 1px 1px 2px 2px;
   background-color: #CEE3F6;
+  margin: .5em 0;
+
   img {
-    width: 15rem;
-    height: 10rem;
+    width: 100%;
     border-radius: 0.5rem;
   }
 `;

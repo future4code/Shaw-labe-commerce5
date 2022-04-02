@@ -1,6 +1,7 @@
 import React from "react";
 import { ProductCard } from "./CarrinhoProdutos";
 import styled from "styled-components";
+import "../App.css";
 
 const Titulo = styled.div`
   display: flex;
@@ -10,7 +11,9 @@ const Titulo = styled.div`
   }
 `;
 
-const ProductsContainer = styled.div``;
+const ProductsContainer = styled.div`
+  margin: 0 1em;
+`;
 
 const LogoImagem = styled.img`
   width: 4rem;
@@ -26,9 +29,8 @@ font-style:oblique ;
 
 const ProductsHeader = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 16px;
+  flex-direction: column;
+  padding: 1em;
   background-color: #cee3f6;
   font-weight: bold;
   border-radius: 20px;
@@ -39,13 +41,19 @@ const ProductsHeader = styled.div`
 `;
 
 const ProductsGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  display: flex;
+  flex-direction: column;
   padding: 16px;
   background-color: #DA81F5;
   border-radius: 50px;
+
+  @media(min-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
 `;
+
 
 export class Products extends React.Component {
   state = {
@@ -78,8 +86,8 @@ export class Products extends React.Component {
     const filteredAndOrderedList = this.getFilteredAndOrderedList();
     return (
       <ProductsContainer>
-          <LogoImagem src="https://cdn-icons.flaticon.com/png/128/3248/premium/3248085.png?token=exp=1648844943~hmac=f4626f62ac143a62be737173ff7e4e80" />
-          <Logo>C.E.U</Logo>
+        <LogoImagem src={require('../images/espaco-sideral.png')} />
+        <Logo>C.E.U</Logo>
         <Titulo>
           <h2>Gostaria de viajar no tempo ou espaço?</h2>
           <p>
@@ -90,15 +98,16 @@ export class Products extends React.Component {
         </Titulo>
         <ProductsHeader>
           <p>Quantidade de produtos: {filteredAndOrderedList.length}</p>
-          <label>
-            Ordenação:
+
+          <div>
+            <label>Ordenação:</label>
             <select value={this.state.sort} onChange={this.onChangeSort}>
               <option value={"CRESCENTE"}>Crescente</option>
               <option value={"DECRESCENTE"}>Decrescente</option>
             </select>
-          </label>
+          </div>
         </ProductsHeader>
-        <ProductsGrid>
+        <ProductsGrid className="App">
           {filteredAndOrderedList.map((product) => {
             return (
               <ProductCard
@@ -108,7 +117,20 @@ export class Products extends React.Component {
             );
           })}
         </ProductsGrid>
+        {/* <div className="main">
+          <div className="box">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div> */}
+
+
+
       </ProductsContainer>
+
+
+
     );
   }
 }
