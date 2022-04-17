@@ -1,1 +1,14 @@
-Sejam bem vindos ao Labe-commerce, esse repositório contém um esqueleto de app React e um .gitignore.
+Nome Projeto:
+-C.E.U Viajens Espaciais!
+
+O que funciona?
+-A logica e a Responsividade também.
+
+O que não funciona?
+-Tentamos alterar o cursor, e tbm fazer uma animação, porem não conseguimos.
+
+Link do Surge:
+
+
+Print do Site:
+
